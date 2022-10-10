@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Inconsolata:wght@300&family=Ma+Shan+Zheng&family=Nunito&family=Roboto:wght@300;400&family=ZCOOL+XiaoWei&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(243, 240, 240);
+}
+
+
+/* Hearder & Nav Styling */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color: #8a8686;
+    
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Promotion Styling */
+.book_promotion {
+    height: 50vh;
+    background-color: darkcyan;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.slogan {
+    font-size: 2rem;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+
+/* Service Styling */
+.service {
+    height: 30vh;
+    color: #fff;
+    background-color: rgb(54, 100, 100);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+/* Team member card Styling */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Booking Form Styling */
+.booking {
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+
+/* Footer Styling */
+footer {
+    display: flex;
+    background-color: #8a8686;
+}
+
+
+
