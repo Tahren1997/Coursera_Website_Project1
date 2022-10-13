@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background-color: rgb(243, 240, 240);
+    background-color: #f3f0f0;
 }
 
 
@@ -21,11 +21,26 @@ body {
 header {
     position: sticky;
     top: 0;
+    height: 50px;
     width: 100%;
     display: flex;
-    background-color: #8a8686;
-    
+    background-color: #DBC8AC;
+    z-index: 1;
 }
+
+
+.toplogo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.logoo > img {
+    width: 200px;
+}
+
+
 
 nav {
     width: 100%;
@@ -33,11 +48,43 @@ nav {
     justify-content: flex-end;
 }
 
+.tab {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.tab > a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.tab > a:visited {
+    color: #000;
+}
+
+.tab:hover{    
+    background-color: #EDDBC0;
+    transition: 0.5s;
+}
+
+.about_tab_hide, .service_tab_hide {
+    display: none;
+}
+
 
 /* Promotion Styling */
 .book_promotion {
+    display: flex;
+
     height: 50vh;
-    background-color: darkcyan;
+    background-image: url('../img/Salon1.jpeg');
+    background-size: cover;
+    background-color: #acb5b5;
+    background-blend-mode: multiply;
+    background-position: center;
+    color: #f3f0f0;
     border-radius: 10px;
     margin: 10px;
 }
@@ -45,39 +92,455 @@ nav {
 .slogan {
     font-size: 2rem;
     font-family: 'ZCOOL XiaoWei', serif;
+    z-index: 1;
+}
+
+.promoword {
+    line-height: 25px;
+    position: relative;
+    top: 25%;
+    left: 10%;
+}
+
+.bookbut a {
+    text-decoration: none;
+    color: #f3f0f0;
+}
+
+.bookbut a:visited {
+    color: #f3f0f0;
+}
+
+.bookbut {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 35px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #d0604c;
+}
+
+.bookbut:hover {
+    background-color: #873838;
+    transition: 0.5s;
+}
+
+.promopic img {
+    position: relative;
+    height: 300px;
+    top: 20px;
+    left: 20px;
+    border-radius: 10px;
+    
+}
+
+.mainintro {
+    margin: 10px;
+    padding-top: 30px;
+}
+
+.mainintro h1 {
+    font-size: 2rem;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding-bottom: 20px;
+}
+
+.mainintro p {
+    line-height: 30px;
 }
 
 
+
+
+
 /* Service Styling */
-.service {
-    height: 30vh;
-    color: #fff;
-    background-color: rgb(54, 100, 100);
+.servicesec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding-bottom: 50px;
+    
     border-radius: 10px;
     margin: 10px;
 }
 
+.servicesec > a {
+    text-decoration: none;
+}
 
-/* Team member card Styling */
+.servicesec > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sercard {
+    width: 30vh;
+    height: 30vw;
+    background-color: #acb5b5;
+    background-blend-mode: multiply;
+    background-size: cover;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 5px 12px #000;
+}
+
+
+.haircut {
+    background-image: url('../img/Service/Haircut.webp');
+    background-position: center;
+}
+
+.coloring {
+    background-image: url('../img/Service/Colorging.jpeg');
+    background-position: center;
+}
+
+.makeup {
+    background-image: url('../img/Service/Makeup.webp');
+    background-position: center;
+}
+
+.manicure {
+    background-image: url('../img/Service/Manicure.jpeg');
+    background-position: center;
+}
+
+.sercard img{
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.sercard h2{
+    font-family: 'ZCOOL XiaoWei', serif;
+    color:#f3f0f0;
+    padding-bottom: 5px;
+    margin: 10px;
+    border-bottom: 2px #f3f0f0 solid;
+}
+
+.serviceIntro {
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceIntro > div {
+    display: flex;
+}
+
+.serIntro {
+    padding-bottom: 40px;
+}
+
+.serIntro div {
+    margin: 10px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu h2 {
+    border-top: 2px #000 solid;
+    border-bottom: 2px #000 solid;
+    padding: 10px;
+}
+
+.demoPic1 {
+    background-image: url("../img/Service/haircut_demo.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.demoPic2 {
+    background-image: url("../img/Service/color_demo.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.demoPic3 {
+    background-image: url("../img/Service/makeup_demo.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.demoPic4 {
+    background-image: url("../img/Service/manicure_demo.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+/* Menu Styling */
+table {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+td {
+    border-top: 1px #000 solid;
+    padding: 10px;
+}
+
+.column1 {
+    width: 200px;
+}
+
+
+
+
+
+
+/* About Page Styling */
+.intro {
+    margin: 30px;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    font-family: 'ZCOOL XiaoWei', serif;
+    padding-bottom: 10px;
+}
+
+.intro p {
+    line-height: 30px;
+}
+
 .team {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #DBC8AC;
+    border-radius: 10px;
+    margin: 20px;
+    width: 30vw;
+    max-width: 280px;
+    height: 30vh;
+    box-shadow: 0 5px 12px;
+} 
+
+.card > h2 {
+    padding-top: 10px;
+}
+
+.card > p {
+    color: #cb4c4c;
+}
+
+.card > div {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.card > div {
+    border-radius: 5px;
+    height: 80%;
+    width: 80%;
+}
+
+.memPic1 {
+    background-image: url('../img/portrait/Barber_portrait1.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.memPic2 {
+    background-image: url('../img/portrait/Barber_portrait2.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.memPic3 {
+    background-image: url('../img/portrait/Barber_portrait3.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.memPic4 {
+    background-image: url('../img/portrait/Barber_portrait4.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.memPic5 {
+    background-image: url('../img/portrait/Barber_portrait5.png');
+    background-size: cover;
+    background-position: center;
+}
+.memPic6 {
+    background-image: url('../img/portrait/Barber_portrait6.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.memPic7 {
+    background-image: url('../img/portrait/Barber_portrait7.png');
+    background-size: cover;
+    background-position: center;
+}
+.memPic8 {
+    background-image: url('../img/portrait/Barber_portrait8.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.memPic9 {
+    background-image: url('../img/portrait/Barber_portrait9.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.card > p, .card > h2 {
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
 
 
 
 /* Booking Form Styling */
 .booking {
+    padding: 40px 0;
     border-radius: 10px;
     margin: 10px;
 }
+
+form {
+    margin: 5px;
+}
+
+.booking > p {
+    font-size: 2rem;
+    font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.int input, .int textarea {
+    width: 50%;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.int label, .choice p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.forms {
+    padding-bottom: 10px;
+}
+
+button {
+    width: 100px;
+    outline: none;
+    color: #f3f0f0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #d0604c;
+}
+
+ button:hover {
+    background-color: #cb4c4c;
+    transition: 0.5s;
+ }
 
 
 
 /* Footer Styling */
 footer {
+    height: 150px;
     display: flex;
-    background-color: #8a8686;
+    background-color: #DBC8AC;
+}
+
+.logos a {
+    height: 80%;
+    width: auto;
+}
+
+.logos, .contactfo, .copyright {
+    display: flex;
+    align-items: center;
+}
+
+.fooword {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 15px;
+}
+
+.footcont {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+/* mediaquery : for screen size change */
+
+@media (max-width: 900px) {
+    .phonecall {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .about {
+        display: none;
+    }
+    .contactfo {
+        display: none;
+    }
+    .fooword {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .service {
+        display: none;
+    }
+    
 }
 
 

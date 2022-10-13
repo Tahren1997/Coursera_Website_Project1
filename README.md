@@ -1,3 +1,7 @@
+reference :
+https://suki.com.au/
+----------------------------------------------------------------------
+
 Professional services: Hair Day  
 
 Based in Madison, Wisconsin, 
@@ -93,3 +97,25 @@ What works well?
 What advice can you give to improve the user experience, layout and visuals of the home page?
 
 You'll also need to give feedback on and grade the assignments of two other learners using the same criteria.
+
+
+---------------------------------------------------
+
+
+About us:
+
+=>
+Who We Are
+Suki began with a philosophy to empower a new cult of hairdressers with education for change, and has simply evolved over time. It has helped create some of the industry’s finest hairdressers, and succeded in making some of the most memorable waves in hair and fashion.
+
+Suki style evolves from unique individuals who maintain a fresh outlook on life and style. This creative playground is responsible for numerous award-winning photographic collections and major industry titles.
+
+Our community of energetic individuals combine their commitment to training and consistent professional standards to come together to create the complete pampering experience where our guests are our focus.
+
+
+
+Our Service:
+
+=>
+Suki Services
+Our hairdressers in Newcastle NSW are creating a true standard of excellence in everything we do. Step into a welcoming and professional environment and savour the experience of truly inspired and talented artists that take great pride in being at the forefront of their disciplines. From our curly hair experts to our colour authority stylists, we are able to create a polished and beautiful look to suit your individual personality. We create hair that is infallible and show stopping, where perfection and effortless glamour is our standard. Our mission is to bring out the best of your natural hair and elevate it to a whole new level. We are proud to offer you services that give you the very best in hair and fashion while remaining down to earth and personable.

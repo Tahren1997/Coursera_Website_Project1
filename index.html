@@ -13,24 +13,25 @@
 </head>
 <body>
     <header>
-        <img src="./img/Artboard19.png" alt="Hair Day Logo" width="100px">
+        <div class="toplogo">
+            <a href="index.html" class="logoo">
+                <img src="./img/Artboard22.png" alt="Hair Day Logo" width="100px" >
+            </a>
+        </div>
         <nav>
-            <div><a href="#">HOME</a></div>
-            <div class="about_tab">
-                <div>ABOUT US</div>
-                <div><a href="#team">TEAM</a></div>
-                <div><a href="#hour">SHOP INFO</a></div>
+            <div class="home tab"> 
+                <a href="#">HOME</a>
             </div>
-            <div class="service_tab">
-                <div>SERVICES</div>
-                <div>Haircut</div>
-                <div>Makeup</div>
-                <div>Nail</div>
+            <div class="about tab">
+                <a href="./about.html">ABOUT US</a>
             </div>
-            <div class="book_tab">
-                <a href="book.html">Book</a>
+            <div class="service tab">
+                <a href="./service.html">SERVICES</a>
             </div>
-            <div class="phonecall_tab">
+            <div class="book tab">
+                <a href="#booking">Book</a>
+            </div>
+            <div class="phonecall tab">
                 <img src="./img/Phone icon.webp" alt="phone call" width="20px">
                 <a href="tel:+100000000">+1 0000-0000</a>
             </div>
@@ -39,118 +40,100 @@
    
     <main>
         <section class="book_promotion">
-            <p class="slogan">Treat Yourself</p>
-            <p>Preserve the chance of on-trend cut and coloring</p>
-            <a href="#booking">Book</a>
+            <div class="promoword">
+                <p> <span class="slogan">Treat Yourself </span> <br>
+                    Preserve the chance of on-trend cut and coloring
+                </p>
+                <div class="bookbut">
+                <a href="#booking">Book</a>
+                </div>
+            </div>
         </section>
 
-        <section class="service">
-            We offer haircut, coloring, .....
+        <section class="mainintro">
+            <h1>
+                Your Curated Experience Is One Step Away
+            </h1>
+            <p>
+                As a premium hair salon in Mariland, we take great care in ensuring that your experience with us is both seamless and indulgent. 
+                From the moment you are welcomed at our front desk to the transition between services and the final finish, we are deeply involved in curating the most relaxing and rejuvenating salon experience possible. 
+                Respectful, organised, and professional, you are able to simply sit back and enjoy the process of a high-end salon journey. Our services are editorial, authentic, and above all exemplary of the industry fundamentals – that is, the Hair Day culture we strive for.
+            </p>
         </section>
-
-        <section id="team" class="team">
-            <div>
-                <h2>Pria</h2>
-                <p class="title">Shop Owner</p>
-                <img src="./img/portrait/Barber_portrait1.jpeg" alt="Pria" height="200px">
-            </div>
-            <div>
-                <h2>Garry</h2>
-                <p class="title">Shop Owner</p>
-                <img src="./img/portrait/Barber_portrait2.jpeg" alt="Gary" height="200px">
-            </div>
-            <div>
-                <h2>Tom</h2>
-                <p class="title">Stylist</p>
-                <img src="./img/portrait/Barber_portrait3.jpeg" alt="Tom" height="200px">
-            </div>
-            <div>
-                <h2>Mary</h2>
-                <p class="title">Stylist</p>
-                <img src="./img/portrait/Barber_portrait4.jpeg" alt="Mary" height="200px">
-            </div>
-            <div>
-                <h2>Lindsey</h2>
-                <p class="title">Manucurist</p>
-                <img src="./img/portrait/Barber_portrait5.png" alt="Lindsey" height="200px">
-            </div>
-            <div>
-                <h2>Jason</h2>
-                <p class="title">Make-up Artist</p>
-                <img src="./img/portrait/Barber_portrait6.jpeg" alt="Lindsey" height="200px">
-            </div>
-            <div>
-                <h2>Melody</h2>
-                <p class="title">Colorist</p>
-                <img src="./img/portrait/Barber_portrait7.png" alt="Melody" height="200px">
-            </div>
-            <div>
-                <h2>Ethan</h2>
-                <p class="title">Colorist</p>
-                <img src="./img/portrait/Barber_portrait8.webp" alt="Lindsey" height="200px">
-            </div>
-            <div>
-                <h2>Hank</h2>
-                <p class="title">Colorist</p>
-                <img src="./img/portrait/Barber_portrait9.jpeg" alt="Hank" height="200px">
-            </div>
-        </section>
+    
 
         <section id="booking" class="booking">
-            <p>Fill First, Book First</p>
-            <form action="post">
-                <div>
-                    <label for="name">Name: </label>
+            <p>Fill First, Book First</p><br>
+            <form action="post" class="info">
+                <div class="name int forms">
+                    <label for="name">Name: </label><br>
                     <input type="text" placeholder="Ethan Chen">
                 </div>
-                <div>
-                    <label for="phone">Phone: </label>
+                <div class="phone int forms">
+                    <label for="phone">Phone: </label><br>
                     <input type="text" placeholder="+1 00000000">
                 </div>
-                <div>
-                    <label for="email">Email: </label>
+                <div class="email int forms">
+                    <label for="email">Email: </label><br>
                     <input type="text" placeholder="xxxxxx@gmail.com">
                 </div>
-                <div class="service_choice">
-                    <label for="service_choice">Service :</label>
-                    <select name="service" id="service_choice" multiple size="3">
-                        <option value="haircut">Stylish Haircut</option>
-                        <option value="coloring">Hair Coloring</option>
-                        <option value="nail">Manicure</option>
-                        <option value="makeup">Make Up</option>
+                <div class="serv choice forms">
+                    <p>Service :</p>
+                        <input type="radio" name="Service">
+                        <label for="Service1">Stylish Haircut</label>
+                        <input type="radio" name="Service">
+                        <label for="Service2">Hair Coloring</label>
+                        <input type="radio" name="Service">
+                        <label for="Service3">Manicure</label>
+                        <input type="radio" name="Service">
+                        <label for="Service4">Makeup</label>
                     </select>
                 </div>
-                <div class="designer_choice">
-                    <label for="designer_choice">Designer :</label>
-                    <select name="designer" id="designer" multiple size="3">
-                        <option value="designer1">Pria</option>
-                        <option value="designer2">Garry</option>
-                        <option value="designer3">Tom</option>
-                        <option value="designer4">Mary</option>
-                        <option value="designer5">Lindsey</option>
-                        <option value="designer6">Jason</option>
-                        <option value="designer7">Melody</option>
-                        <option value="designer8">Ethan</option>
-                        <option value="designer9">Hank</option>
-                    </select>
+                <div class="desi choice forms">
+                    <p>Designer :</p>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Pria</label>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Garry</label>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Mary</label>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Lindsey</label>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Jason</label>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Melody</label>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Ethan</label>
+                        <input type="radio" name="designer">
+                        <label for="designer1">Hank</label>
                 </div>
-                <div>
-                    <label for="message">Special Request :</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder=" "></textarea>
+                <div class="messa int forms">
+                    <label for="message">Special Request :</label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Specific hairdye..."></textarea>
                 </div>
-                <input type="submit" value="Book">
+                <Button type="submit">Book</Button>
             </form>
+            
         </section>
     </main>
 
     <footer>
-        <img src="./img/Artboard22.png" alt="Hair Day Plain Logo" width="200px">
-        <div class="contact_info">
-            <p>Contact</p>
-            <p>Phone: +1 0000-0000</p>
-            <p>Address: 0000, XXXX St, XXXX Town, Mariland, WI</p>
+        <div class="logos">
+            <a href="index.html">
+                <img src="./img/Artboard19.png" alt="Hair Day Plain Logo" width="200px" class="logo">
+            </a>
         </div>
-        <p>&copy; Copyright Hair Day</p>
+        <div class="fooword">
+            <div class="contactfo">
+                <p><span class="footcont">Contact :</span><br><br>
+                Phone: +1 0000-0000<br>
+                Address: 0000, XXXX St, XXXX Town, Mariland, WI</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; Copyright Hair Day</p>
+            </div>  
+        </div>
     </footer>
 </body>
 </html>
